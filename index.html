@@ -1,26 +1,84 @@
-<!DOCTYPE html>
 <html>
-	<head>
-	<title>Water Tut</title>
-	<link href = "https://fonts.googleapis.com/css?family=Roboto:300,500" rel = "stylesheet">
-	<script src="https://gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-	</head>
-	<body>
+<head>
+	<title>
+		WaterTut
+	</title>
+	<style type="text/css">
+	    @import url('https://fonts.googleapis.com/css?family=Quicksand');
+		body
+		{
+			background:  url(images/bg.png) repeat
+		}
+		#loginwindow 
+		{
+			position: absolute;
+    		height: 100%;
+    		width: 100%;;
+		}
+		#title
+		{
+			font-family:Quicksand, sans-serif;
+			font-size: 50px;
+			color: White;
+			text-align:center;
+		}
+		#subtitle
+		{
+			font-family:Quicksand, sans-serif;
+			font-size: 30px;
+			color: White;
+			text-align:center;
+		}
+		input{
+			width: 100%;
+			border:none;
+			color: #fff;
+			background:rgba(0,0,0,.1);
+			margin-bottom: 5px;
+			padding-top:10px;
+			padding-bottom:10px;
+			-webkit-transition: all .35s ease-in-out;
+			-moz-transition: all .35s ease-in-out;
+			-ms-transition: all .35s ease-in-out;
+			-o-transition: all .35s ease-in-out;
+			transition: all .35s ease-in-out;
+		}
+	</style>
+
+</head>
+<body>
 	
-		<div class = "container">
-			<div class = "main">
-				<h2>Log in</h2>
-				<form id = "form_id" method = "post" name = "myform">
-				<label>Email</label>
-				<input type = "text" name = "email" id = "email">
-				<label>Password</label>
-				<input type = "text" name = "password" id = "password">
-				<input type="button" value="btnLogin" id="btnLogin"/>
-				<input type="button" value="Sign Up" id="btnSignUp"/>
-				<input type="button" value ="Log Out" id ="btnLogout"/ class = "btn btn-action hide"/>
-				</form>
-			</div>
-		</div>
-		<script src="js/login.js"></script>
-	</body>
+	<div id="title">
+ 		WaterTut 
+	</div>
+	
+	<div id="loginwindow">
+		<form id = "login-form" action = "" method = "post">
+			<table>
+				
+	            <tr>
+	            	
+	            	<td colspan="2">
+			               <input id = "username" type = "text" placeholder = "Username">
+		            </td>
+	            </tr>
+	            <tr>
+	            	
+	            	<td  colspan="2">
+		             	<input id = "password" type = "password" placeholder = "Password">
+	            	</td>
+	            </tr>
+	
+	            <tr>
+	             	<td>
+		            	<input id = "submit" type = "button" value = "Login" >
+	 	            </td>
+	             	<td>
+		            	<input type="submit" value="Register">
+		            </td>
+				</tr>
+	         </table>
+        </form>
+     </div>
+</body>
 </html>
