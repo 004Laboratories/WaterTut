@@ -1,7 +1,45 @@
 <html>
 <head>
 	<title>
-		WaterTut-Register
+		Create your WaterTut Account
 	</title>
+	
+	<link rel="stylesheet" type="text/css" href="./css/reg.css"/>
+		<script src="https://gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+		
 </head>
+<body>
+ <div id="title">
+ 		Create your WaterTut Account
+	</div>
+	
+<div class="form">
+        <div id="login">
+          <form action="/" method="post">
+			<div class="field-wrap">
+            Name<br>
+			<input type="name"  placeholder="First Name" required autocomplete="on"/>
+			<input type="name" placeholder="last Name" required autocomplete="on"/>
+          </div>
+		  Enter Your Email:<br>
+		  <input type="email" placeholder="Email Address" required autocomplete="on"/>
+          <div class="field-wrap">
+            Create a password:<br>
+			<input type="password" placeholder="" required autocomplete="on"/>
+          </div>
+		  Confirm your password:<br>
+		  <input type="password" placeholder="" required autocomplete="on"/> 
+         </p>
+         
+    
+		   <input type="checkbox" name="checkbox" value="check" id="agree" /> 
+		   I have read and agree to the Terms and ConditionsI accept the terms and conditions
+		   </p>
+		    <button class="button button-block"/>Create Account</button>
+		   </form>
+        </div>
+      </div>
+</div>
+	 <script src="js/login.js"></script>
+</body>
 </html>
