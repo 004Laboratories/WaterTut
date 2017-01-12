@@ -6,16 +6,18 @@ html {
 
 body
 {
-	background:  url(../images/bg.png) repeat
+	background:  url(../images/bg.png) repeat;
+	font-family:Quicksand, sans-serif;
+	color: white;
 }
 
 #title
 {
 	font-family:Quicksand, sans-serif;
 	font-size: 4rem;
-	color: White;
 	text-align:center;
 }
+
 	
 *, *:before, *:after {
   box-sizing: border-box;
@@ -41,7 +43,6 @@ input, textarea {
   font-size: 22px;
   display: block;
   width: 100%;
-  height: 100%;
   padding: 5px 10px;
   background: none;
   border: 1px solid #a0b3b0;
@@ -84,14 +85,13 @@ input:focus, textarea:focus {
 	background: #ec772c;
 }
 
+.create {
+	width: 50%;
+	font-size: 1rem;
+}
+
 .forgot {
   font-family: Quicksand, sans-serif;
   margin-top: -20px;
   text-align: right;
-}
-#text
-{
-	font-family:Quicksand, sans-serif;
-	color: Black;
-	text-align:center;
 }
