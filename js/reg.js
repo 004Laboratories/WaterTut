@@ -71,23 +71,17 @@
 			if(error)
 				alert("mans got fked");
 			else
+			{
+				firebase.auth().signOut();
 				window.location = activate;
+			}
 				});
 		supprom = firebase.auth().signOut();
 	}
-  
-  firebase.auth().onAuthStateChanged(user =>
-  {
-	  var name, email, photoUrl, uid, emailVerified;
-	  const first = txtName1.value;
-      const last = txtName2.value;
-	  if(user)
-	  {
-		console.log('user');
-	  } else
-	  {
-		  console.log('user is not logged in');
-	  }
-  })
-  
+	
+	firebase.auth().onAuthStateChanged(function(user)
+	{
+		console.log(user);
+		user.sendEmailVerification(); 
+	});
   }());
