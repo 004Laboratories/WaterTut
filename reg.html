@@ -18,27 +18,30 @@
           <form action="/" method="post">
 			<div class="field-wrap">
             First Name<br>
-			<input type="name" required autocomplete="on"/><br>
+			<input type="name" id = "name1" required autocomplete="on"/><br>
 			Last Name<br>
-			<input type="name" required autocomplete="on"/>
+			<input type="name" id = "name2" required autocomplete="on"/>
           </div>
 		  <div class="field-wrap">
 		  Enter Your Email:<br>
-		  <input type="email" required autocomplete="on"/>
+		  <input type="email" id = "email" required autocomplete="on"/>
+		  <span id="emailError"></span>
 		  </div>
           <div class="field-wrap">
             Create a password:<br>
-			<input type="password" placeholder="" required autocomplete="on"/><br>
+			<input type="password" id = "pass1" placeholder="" required autocomplete="on"/>
+			<span id="passError1"></span><br><br>
 			Confirm your password:<br>
-		  <input type="password" placeholder="" required autocomplete="on"/>
+			<input type="password" id = "pass2" placeholder="" required autocomplete="on"/>
+			<span id="passError2"></span><br>
 		  <p font-size="10">By clicking Create Account, you agree to our 
 		  <a href="termsandconditions.html">Terms and conditions</a></p>
           </div> 
-		    <button class="button create"/>Create Account</button>
+		    <button  type = "button" class="button create" id = "create"/>Create Account</button>
 		   </form>
         </div>
       </div>
 </div>
-	 <script src="js/login.js"></script>
+	 <script src="js/reg.js"></script>
 </body>
 </html>
