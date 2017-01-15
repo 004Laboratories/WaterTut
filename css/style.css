@@ -153,11 +153,12 @@ input:focus, textarea:focus {
 label[for="nav-trigger"] {
 	margin-top: 18px;
   position: fixed;
-  left: 15px; top: 15px;
+  left: 15px; 
+  top: 10px;
   z-index: 2;
   
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   cursor: pointer;
   background-image: url(../images/menu_icon.png);
   background-repeat: none;
@@ -203,7 +204,7 @@ html, body { height: 100%; width: 100%;}
 }
 	
 .search-input-wrapper {
-	padding: 0 66px 20px 0; /* Right padding for submit button width */
+	padding: 0 66px 20px 0;
 	overflow: hidden;
 }
 
@@ -212,7 +213,7 @@ html, body { height: 100%; width: 100%;}
 }
 
 .search {
-  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+  padding: 0 25px 0 200px;
   background: #111;	
 }
 
@@ -220,16 +221,16 @@ html, body { height: 100%; width: 100%;}
   -webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
- 	height: 60px;
+ 	height: 30px;
   padding: 0 46px 0 10px;
 	border-color: #888;
-  border-radius: 35px; /* (height/2) + border-width */
+  border-radius: 35px; 
   border-style: solid;
 	border-width: 5px;
-  margin-top: 15px;
+  margin-top: 20px;
   color: #fff;
   font-family: Quicksand, sans-serif;
-	font-size: 26px;
+	font-size: 20px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
@@ -237,19 +238,19 @@ html, body { height: 100%; width: 100%;}
 .search-submit {
   position: absolute;
 	right: 0;
-	top: 0;
+	top: 5px;
 	display: block;
-	width: 60px;
-	height: 60px;
+	width: 30px;
+	height: 30px;
   padding: 0;
   border: none;
-	margin-top: 20px; /* margin-top + border-width */
-  margin-right: 5px; /* border-width */
+	margin-top: 20px; 
+  margin-right: 20px;
 	background: transparent;
   color: #888;
   font-family: Quicksand, sans-serif;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .search-input:focus {
@@ -277,9 +278,9 @@ input:-moz-placeholder {
 .home-button {
   float: left;
   margin-left: 75px;
-  margin-top: 25px;
+  margin-top: 15px;
   color: #888;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   line-height: 45px;
   text-align: center;
@@ -289,23 +290,22 @@ input:-moz-placeholder {
 select {
 	float: right;
 	outline: none;
-	margin-left: 25px;
-	margin-right: 50px;
-	margin-top: 25px;
+	margin-left: 50px;
+	margin-right: 100px;
+  margin-top: 20px;
 	background: transparent;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
- 	height: 60px;
-  padding: 0 30px 0 10px;
+ 	height: 30px;
+  padding: 0 100px 0 20px;
 	border-color: #888;
-  border-radius: 35px; /* (height/2) + border-width */
+  border-radius: 35px;
   border-style: solid;
 	border-width: 5px;
-  margin-top: 15px;
   color: #fff;
   font-family: Quicksand, sans-serif;
-	font-size: 26px;
+	font-size: 20px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
     appearance:none;
@@ -313,8 +313,7 @@ select {
 }
 
 select option {
-    margin:40px;
     background: #111;
-    color:#fff;
+    color:white;
     text-shadow:0 1px 0 rgba(0,0,0,0.4);
 }
